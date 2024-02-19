@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .quiz-container {
+    background-image: linear-gradient(0deg, #21d4fd 0%, #b721ff 100%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    max-width: 45%;
+  }
+  
+  .titulo {
+    color: white;
+    padding: 1.2rem;
+    font-size: 2rem;
+  }
+  
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    gap: 2.5rem;
+  }
+  
+  #questao {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  #opcoes {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .opcao {
+    padding: 1rem;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #fff;
+    color: rgb(113, 39, 182);
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 0px #b6a5e5;
+    cursor: pointer;
+  }
+  
+  #proxima {
+    width: 40%;
+    padding: 1rem;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #5a429b;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    box-shadow: 0px 0px 10px 0px #5032a0;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .quiz-container {
+      min-width: 100%;
+      min-height: 100%;
+      border-radius: 0px;
+    }
+  
+    .titulo {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    #opcoes {
+      width: 90%;
+    }
+  
+    #proxima {
+      width: 60%;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 991px) {
+    .quiz-container {
+      min-width: 100%;
+      min-height: 100%;
+      border-radius: 0px;
+    }
+  
+    .titulo {
+      font-size: 3rem;
+      text-align: center;
+      max-width: 60%;
+    }
+  
+    .text {
+      font-size: 1.8rem;
+    }
+  
+    #questao {
+      font-size: 2rem;
+    }
+  
+    #opcoes {
+      width: 70%;
+    }
+  
+    #proxima {
+      width: 40%;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1500px) {
+    .quiz-container {
+      min-width: 100%;
+      min-height: 100%;
+      border-radius: 0px;
+    }
+  
+    .titulo {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    #opcoes {
+      width: 30%;
+    }
+  
+    #proxima {
+      width: 20%;
+    }
+  }
+  
